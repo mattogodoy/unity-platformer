@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{0D673C21-6692-8E33-A256-038658D5F5F8}") = "unity-platformer", "Assembly-CSharp.csproj", "{9C6A387D-97ED-0E91-DD55-C4682B8A9951}"
+EndProject
+Project("{0D673C21-6692-8E33-A256-038658D5F5F8}") = "unity-platformer", "Assembly-CSharp-Editor.csproj", "{86B74E3E-9455-780A-801D-1BF69C94CC36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C6A387D-97ED-0E91-DD55-C4682B8A9951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6A387D-97ED-0E91-DD55-C4682B8A9951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6A387D-97ED-0E91-DD55-C4682B8A9951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6A387D-97ED-0E91-DD55-C4682B8A9951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B74E3E-9455-780A-801D-1BF69C94CC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B74E3E-9455-780A-801D-1BF69C94CC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B74E3E-9455-780A-801D-1BF69C94CC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B74E3E-9455-780A-801D-1BF69C94CC36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
