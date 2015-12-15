@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{100AE41E-9853-00A1-0814-C759729749EB}</ProjectGuid>
+    <ProjectGuid>{9C6A387D-97ED-0E91-DD55-C4682B8A9951}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -188,6 +188,7 @@
      <Compile Include="Assets\SampleAssets\Vehicles\Car\Scripts\Wheel.cs" />
      <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\Ball.cs" />
      <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\BallUserControl.cs" />
+     <Compile Include="Assets\TilingSystem.cs" />
      <None Include="Assets\SampleAssets\Effects\Projectors\ProjectorGuidelines.txt" />
      <None Include="Assets\SampleAssets\Effects\GlassRefraction (Pro Only)\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BlendOneOne.shader" />
