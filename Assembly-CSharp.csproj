@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9C6A387D-97ED-0E91-DD55-C4682B8A9951}</ProjectGuid>
+    <ProjectGuid>{100AE41E-9853-00A1-0814-C759729749EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ArmRotation.cs" />
      <Compile Include="Assets\Parallaxing.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\CameraFollow.cs" />
