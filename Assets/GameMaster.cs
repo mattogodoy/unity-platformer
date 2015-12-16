@@ -20,8 +20,8 @@ public class GameMaster : MonoBehaviour {
 		yield return new WaitForSeconds(spawnDelay);
 		GetComponent<AudioSource>().Play ();
 		Instantiate (playerPrefab, spawnPoint.position, spawnPoint.rotation);
-		GameObject clone = Instantiate (spawnPrefab, spawnPoint.position, spawnPoint.rotation) as GameObject;
-		Destroy (clone, 3f);
+		Transform clone = (Transform)Instantiate (spawnPrefab, spawnPoint.position, spawnPoint.rotation);
+		Destroy (clone.gameObject, 3f);
 	}
 
 	public static void KillPlayer (Player player) {
