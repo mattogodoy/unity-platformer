@@ -107,7 +107,6 @@ public class EnemyAI : MonoBehaviour {
 			if (pathIsEnded) {
 				return;
 			} else {
-				Debug.Log ("End of path reached");
 				pathIsEnded = true;
 				return;
 			}

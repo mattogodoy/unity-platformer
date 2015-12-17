@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraShake.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\AIPath.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\Seeker.cs" />
@@ -143,6 +144,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\TilingSystem.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
+     <Compile Include="Assets\StatusIndicator.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -245,6 +247,10 @@
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
  <HintPath>/Users/matto/Documents/Dev/Unity/Platformer/Assets/Imports/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{BCFC5CD0-6A57-D3FC-62E6-5F2C401A0DB7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
