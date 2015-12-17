@@ -1127,6 +1127,7 @@ GameObject:
   - 124: {fileID: 2129030252}
   - 81: {fileID: 2129030251}
   - 114: {fileID: 2129030256}
+  - 114: {fileID: 2129030257}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -1219,3 +1220,26 @@ MonoBehaviour:
   lookAheadReturnSpeed: 0.5
   lookAheadMoveThreshold: 0.1
   yPosRestriction: -1
+--- !u!114 &2129030257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2129030250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.3
+  chromaticAberration: 3
+  axialAberration: 3.23
+  blur: 0
+  blurSpread: 0.75
+  luminanceDependency: 0.78
+  blurDistance: 0.37
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
