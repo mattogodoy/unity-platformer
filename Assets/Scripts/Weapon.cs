@@ -4,7 +4,7 @@ using System.Collections;
 public class Weapon : MonoBehaviour {
 
 	public float fireRate = 0;
-	public float damage = 10;
+	public int damage = 10;
 	public LayerMask whatToHit;
 	public Transform bulletTrailPrefab;
 	public Transform muzzleFlashPrefab;
@@ -52,7 +52,12 @@ public class Weapon : MonoBehaviour {
 
 		if (hit.collider != null) {
 			Debug.DrawLine (firePointPosition, hit.point, Color.red, 1.0f);
-			Debug.Log("We hit: " + hit.collider.name + " and did: " + damage + " damage.");
+
+			Enemy enemy = hit.collider.GetComponent<Enemy> ();
+			if (enemy != null) {
+				enemy.DamageEnemy (damage);
+				Debug.Log("We hit: " + hit.collider.name + " and did: " + damage + " damage.");
+			}
 		}
 	}
 

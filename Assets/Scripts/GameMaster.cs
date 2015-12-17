@@ -29,4 +29,11 @@ public class GameMaster : MonoBehaviour {
 		Destroy (player.gameObject);
 		gm.StartCoroutine(gm.RespawnPlayer ());
 	}
+
+
+
+	public static void KillEnemy (Enemy enemy) {
+		Debug.Log ("Enemy killed!");
+		Destroy (enemy.gameObject);
+	}
 }
