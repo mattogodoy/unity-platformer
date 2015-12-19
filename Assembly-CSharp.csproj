@@ -45,7 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraShake.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\AIPath.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
      <Compile Include="Assets\Imports\AstarPathfindingProject\Core\AI\Seeker.cs" />
@@ -134,6 +133,7 @@
      <Compile Include="Assets\Scripts\ArmRotation.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\GameMaster.cs" />
@@ -142,9 +142,9 @@
      <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\StatusIndicator.cs" />
      <Compile Include="Assets\Scripts\TilingSystem.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
-     <Compile Include="Assets\StatusIndicator.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />

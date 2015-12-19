@@ -32,7 +32,6 @@ public class GameMaster : MonoBehaviour {
 	}
 
 	public static void KillPlayer (Player player) {
-		Debug.Log ("Player is dead!");
 		Destroy (player.gameObject);
 		gm.StartCoroutine(gm._RespawnPlayer ());
 	}
@@ -42,10 +41,8 @@ public class GameMaster : MonoBehaviour {
 	}
 
 	public void _killEnemy(Enemy _enemy) {
-		//Debug.Log ("Enemy killed!");
-
-		GameObject _clone = Instantiate (_enemy.deathParticles, _enemy.transform.position, Quaternion.identity) as GameObject;
-		Destroy (_clone, 3f);
+		Transform _clone = Instantiate (_enemy.deathParticles, _enemy.transform.position, Quaternion.identity) as Transform;
+		Destroy (_clone.gameObject, 3f);
 		cameraShake.Shake (_enemy.shakeAmounth, _enemy.shakeLength);
 		Destroy (_enemy.gameObject);
 	}
