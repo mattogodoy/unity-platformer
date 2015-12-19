@@ -13,12 +13,17 @@ public class Enemy : MonoBehaviour {
 			set { _currentHealth = Mathf.Clamp(value, 0, maxHealth); }
 		}
 
+		public int damage = 40;
+
 		public void Init() {
 			currentHealth = maxHealth;
 		}
 	}
 
 	public EnemyStats enemyStats = new EnemyStats ();
+	public Transform deathParticles;
+	public float shakeAmounth = 0.1f;
+	public float shakeLength = 0.1f;
 
 	[Header("Optional: ")]
 	[SerializeField]
@@ -30,6 +35,10 @@ public class Enemy : MonoBehaviour {
 		if (statusIndicator != null) {
 			statusIndicator.setHealth (enemyStats.currentHealth, enemyStats.maxHealth);
 		}
+
+		if (deathParticles == null) {
+			Debug.LogError ("No death particles referenced!");
+		}
 	}
 
 	public void DamageEnemy(int damage) {
@@ -40,6 +49,14 @@ public class Enemy : MonoBehaviour {
 
 		if (statusIndicator != null) {
 			statusIndicator.setHealth (enemyStats.currentHealth, enemyStats.maxHealth);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D _collInfo) {
+		Player _player = _collInfo.collider.GetComponent<Player> ();
+		if (_player != null) {
+			_player.DamagePlayer (enemyStats.damage);
+			DamageEnemy (99999);
 		}
 	}
 }
