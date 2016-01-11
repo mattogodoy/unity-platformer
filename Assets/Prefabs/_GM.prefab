@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11473532}
   - 82: {fileID: 8250376}
   - 114: {fileID: 11411624}
+  - 114: {fileID: 11415128}
   m_Layer: 0
   m_Name: _GM
   m_TagString: GM
@@ -145,6 +146,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+--- !u!114 &11415128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355e1446f1de143d9ad6fffa3ce007e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: Alien Invasion
+    enemy: {fileID: 462058, guid: 64bdf6e79a2ea4df7a69ad927ca549ac, type: 2}
+    count: 2
+    rate: 1
+  - name: The return of the Aliens
+    enemy: {fileID: 462058, guid: 64bdf6e79a2ea4df7a69ad927ca549ac, type: 2}
+    count: 3
+    rate: 1.5
+  - name: The revenge of the Aliens
+    enemy: {fileID: 462058, guid: 64bdf6e79a2ea4df7a69ad927ca549ac, type: 2}
+    count: 5
+    rate: 2
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeBetweenWaves: 5
 --- !u!114 &11431894
 MonoBehaviour:
   m_ObjectHideFlags: 1

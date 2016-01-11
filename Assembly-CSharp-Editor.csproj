@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{41030BC3-A9D2-4B4C-A580-D8BF83D7419F}</ProjectGuid>
+    <ProjectGuid>{86B74E3E-9455-780A-801D-1BF69C94CC36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -192,10 +192,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/Users/matto/Documents/Dev/Unity/Platformer/Assets/Imports/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/Users/esnemago/Documents/Dev/test/unity-platformer/Assets/Imports/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>/Users/matto/Documents/Dev/Unity/Platformer/Assets/Imports/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>/Users/esnemago/Documents/Dev/test/unity-platformer/Assets/Imports/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -212,9 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BCFC5CD0-6A57-D3FC-62E6-5F2C401A0DB7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{6C4661A0-6710-A385-2CA1-810229792C6D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{100AE41E-9853-00A1-0814-C759729749EB}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{9C6A387D-97ED-0E91-DD55-C4682B8A9951}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

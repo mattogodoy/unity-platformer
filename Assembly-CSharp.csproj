@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{100AE41E-9853-00A1-0814-C759729749EB}</ProjectGuid>
+    <ProjectGuid>{9C6A387D-97ED-0E91-DD55-C4682B8A9951}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -144,6 +144,7 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\StatusIndicator.cs" />
      <Compile Include="Assets\Scripts\TilingSystem.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -242,15 +243,15 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/Users/matto/Documents/Dev/Unity/Platformer/Assets/Imports/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/Users/esnemago/Documents/Dev/test/unity-platformer/Assets/Imports/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>/Users/matto/Documents/Dev/Unity/Platformer/Assets/Imports/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>/Users/esnemago/Documents/Dev/test/unity-platformer/Assets/Imports/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{BCFC5CD0-6A57-D3FC-62E6-5F2C401A0DB7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{6C4661A0-6710-A385-2CA1-810229792C6D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

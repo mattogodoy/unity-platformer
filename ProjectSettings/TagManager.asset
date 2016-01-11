@@ -9,6 +9,7 @@ TagManager:
   - Smelly
   - Fire
   - GM
+  - Enemy
   layers:
   - Default
   - TransparentFX
