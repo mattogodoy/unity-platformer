@@ -116,10 +116,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 630931099}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 97.69998}
-  m_SizeDelta: {x: 160, y: 69.05}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -227}
+  m_SizeDelta: {x: 160, y: 69.04999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &29620792
 CanvasGroup:
@@ -674,6 +674,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 630931099}
   - 95: {fileID: 630931100}
+  - 114: {fileID: 630931101}
   m_Layer: 0
   m_Name: WaveUI
   m_TagString: Untagged
@@ -717,6 +718,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &630931101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 630931098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d27457c9ae946ebbd5df74c59984ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 1050286338}
+  waveAnimator: {fileID: 630931100}
+  waveCountdownText: {fileID: 29620794}
+  waveCountText: {fileID: 1827412928}
 --- !u!1 &757638990
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +821,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.15000999, y: -67.80001}
+  m_AnchoredPosition: {x: -0.15000999, y: -230}
   m_SizeDelta: {x: 160.3, y: 83.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &955203983
@@ -834,6 +850,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1050286338 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6,
+    type: 2}
+  m_PrefabInternal: {fileID: 2054540696}
+  m_Script: {fileID: 11500000, guid: 355e1446f1de143d9ad6fffa3ce007e2, type: 3}
 --- !u!4 &1056645676
 Transform:
   m_ObjectHideFlags: 0
