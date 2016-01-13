@@ -853,13 +853,15 @@ GameObject:
   m_Component:
   - 224: {fileID: 375322477}
   - 114: {fileID: 375322478}
+  - 225: {fileID: 375322480}
+  - 95: {fileID: 375322479}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &375322477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -892,6 +894,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97cd14a9e087047f2b6a5a8db5c3cd45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &375322479
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375322476}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08028064c23c04ce2912dfb2aea94ebb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!225 &375322480
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375322476}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &401247171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1674,7 @@ GameObject:
   - 224: {fileID: 1263796253}
   - 222: {fileID: 1263796255}
   - 114: {fileID: 1263796254}
+  - 225: {fileID: 1263796256}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -1701,6 +1732,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263796252}
+--- !u!225 &1263796256
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263796252}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1268386007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,18 +2558,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
-      propertyPath: spawnPoints.Array.data[0]
+    - target: {fileID: 11473532, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
+      propertyPath: gameOverUI
       value: 
-      objectReference: {fileID: 1490324217}
-    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
-      propertyPath: spawnPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1056645676}
-    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
-      propertyPath: spawnPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 873551391}
+      objectReference: {fileID: 375322476}
     - target: {fileID: 11431894, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
       propertyPath: backgrounds.Array.data[0]
       value: 
@@ -2544,6 +2578,18 @@ Prefab:
       propertyPath: cam
       value: 
       objectReference: {fileID: 2129030254}
+    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
+      propertyPath: spawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1490324217}
+    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
+      propertyPath: spawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1056645676}
+    - target: {fileID: 11415128, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
+      propertyPath: spawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 873551391}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 298832af0c20b4b8bb4914b2820e3ff6, type: 2}
   m_IsPrefabParent: 0

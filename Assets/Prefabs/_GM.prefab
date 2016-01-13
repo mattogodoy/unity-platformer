@@ -174,7 +174,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  timeBetweenWaves: 5
+  timeBetweenWaves: 3
 --- !u!114 &11431894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc20c4e8564f41a58ba8ffb66091ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLives: 3
   playerPrefab: {fileID: 471352, guid: 1214eae1df2354ddca0d5e449dcf307b, type: 2}
   spawnPoint: {fileID: 436546}
   spawnDelay: 1
